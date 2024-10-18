@@ -9,89 +9,165 @@
 
 
 
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "33c257c9-ad3b-4ea4-bf6e-b1d8f69be4d4",
-        apiHost: "https://flow.ailedbusiness.com",
-        chatflowConfig: {
-            // topK: 2
-        },
-        theme: {
-            button: {
-                backgroundColor: "#3B81F6",
-                right: 20,
-                bottom: 20,
-                size: 48, // small | medium | large | number
-                dragAndDrop: true,
-                iconColor: "white",
-                customIconSrc: "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
-                autoWindowOpen: {
-                    autoOpen: true, //parameter to control automatic window opening
-                    openDelay: 7, // Optional parameter for delay time in seconds
-                    autoOpenOnMobile: false, //parameter to control automatic window opening in mobile
-                    },
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "33c257c9-ad3b-4ea4-bf6e-b1d8f69be4d4",
+            apiHost: "https://flow.ailedbusiness.com",
+            chatflowConfig: {
+                // topK: 2
             },
-            tooltip: {
-                showTooltip: true,
-                tooltipMessage: 'Hi 👋 Boost your website’s SEO with guest posts',
-                tooltipBackgroundColor: 'black',
-                tooltipTextColor: 'white',
-                tooltipFontSize: 16,
-            },
-            chatWindow: {
-                showTitle: true,
-                title: 'Guest Post Services Demo',
-                titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                showAgentMessages: true,
-                welcomeMessage: '👋 Hi there! Are you looking to boost your website’s SEO and gain more visibility? We offer premium guest posts that can help you do that.',
-                errorMessage: 'This is an error message',
-                backgroundColor: "#ffffff",
-                backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
-                height: 700,
-                width: 400,
-                fontSize: 16,
-                //starterPrompts: ['What is a bot?', 'Who are you?'], // It overrides the starter prompts set by the chat flow passed
-                starterPromptFontSize: 15,
-                clearChatOnReload: false, // If set to true, the chat will be cleared when the page reloads.
-                botMessage: {
-                    backgroundColor: "#f7f8ff",
-                    textColor: "#303235",
-                    showAvatar: true,
-                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
-                },
-                userMessage: {
+            theme: {
+                button: {
                     backgroundColor: "#3B81F6",
-                    textColor: "#ffffff",
-                    showAvatar: true,
-                    avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                    right: 20,
+                    bottom: 20,
+                    size: 48, // small | medium | large | number
+                    dragAndDrop: true,
+                    iconColor: "white",
+                    customIconSrc: "AI Smartbot Agency logo.png",
+                    autoWindowOpen: {
+                        autoOpen: true, //parameter to control automatic window opening
+                        openDelay: 7, // Optional parameter for delay time in seconds
+                        autoOpenOnMobile: false, //parameter to control automatic window opening in mobile
+                        },
                 },
-                textInput: {
-                    placeholder: 'Type your question',
-                    backgroundColor: '#ffffff',
-                    textColor: '#303235',
-                    sendButtonColor: '#3B81F6',
-                    maxChars: 50,
-                    maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
-                    autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
-                    sendMessageSound: true,
-                    // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
-                    receiveMessageSound: true,
-                    // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true. 
+                tooltip: {
+                    showTooltip: true,
+                    tooltipMessage: 'Hi 👋 Boost your website’s SEO with guest posts',
+                    tooltipBackgroundColor: 'black',
+                    tooltipTextColor: 'white',
+                    tooltipFontSize: 16,
                 },
-                feedback: {
-                    color: '#303235',
-                },
-                footer: {
-                    textColor: '#303235',
-                    text: '',
-                    company: 'Your website here',
-                    companyLink: 'https://aismartbotagency.com',
+                chatWindow: {
+                    showTitle: true,
+                    title: 'Guest Post Services Demo',
+                    titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                    showAgentMessages: true,
+                    welcomeMessage: '👋 Hi there! Are you looking to boost your website’s SEO and gain more visibility? We offer premium guest posts that can help you do that.',
+                    errorMessage: 'This is an error message',
+                    backgroundColor: "#ffffff",
+                    backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
+                    height: 700,
+                    width: 400,
+                    fontSize: 16,
+                    //starterPrompts: ['What is a bot?', 'Who are you?'], // It overrides the starter prompts set by the chat flow passed
+                    starterPromptFontSize: 15,
+                    clearChatOnReload: false, // If set to true, the chat will be cleared when the page reloads.
+                    botMessage: {
+                        backgroundColor: "#f7f8ff",
+                        textColor: "#303235",
+                        showAvatar: true,
+                        avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png",
+                    },
+                    userMessage: {
+                        backgroundColor: "#3B81F6",
+                        textColor: "#ffffff",
+                        showAvatar: true,
+                        avatarSrc: "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
+                    },
+                    textInput: {
+                        placeholder: 'Type your question',
+                        backgroundColor: '#ffffff',
+                        textColor: '#303235',
+                        sendButtonColor: '#3B81F6',
+                        maxChars: 50,
+                        maxCharsWarningMessage: 'You exceeded the characters limit. Please input less than 50 characters.',
+                        autoFocus: true, // If not used, autofocus is disabled on mobile and enabled on desktop. true enables it on both, false disables it on both.
+                        sendMessageSound: true,
+                        // sendSoundLocation: "send_message.mp3", // If this is not used, the default sound effect will be played if sendSoundMessage is true.
+                        receiveMessageSound: true,
+                        // receiveSoundLocation: "receive_message.mp3", // If this is not used, the default sound effect will be played if receiveSoundMessage is true. 
+                    },
+                    feedback: {
+                        color: '#303235',
+                    },
+                    footer: {
+                        textColor: '#303235',
+                        text: '',
+                        company: 'Your website here',
+                        companyLink: 'https://aismartbotagency.com',
+                    }
                 }
             }
+        })
+    </script>
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 0 px;
         }
-    })
-</script>
+        h1, h2 {
+            color: #0066cc;
+        }
+        .warning {
+            background-color: #ffcc00;
+            padding: 10px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+
+            border-radius: 10px; /* Adjust this value for more or less rounding */
+            background-color: #4CAF50; /* Optional: Button background color */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor on hover */
+          }
+
+          .cta-button:hover {
+            background-color: #45a049; /* Optional: Change color on hover */
+          }
+        .benefits {
+            margin-left: 20px;
+        }
+        .benefits li {
+            margin-bottom: 10px;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .step {
+            flex-basis: 30%;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .additional-benefits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .benefit-item {
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .disclaimer {
+            font-size: 0.8em;
+            margin-top: 40px;
+            color: #666;
+        }
+
+
+    </style>
 
 
 </head>
@@ -138,7 +214,7 @@
         <section id="contact">
             <h2>Contact AI Smartbot Agency</h2>
             <p>Interested in adding a custom chatbot to your website to help sell guest posts? Contact AI Smartbot Agency today!</p>
-            <p>Website: <a href="https://www.aismartbotagency.com" target="_blank">aismartbotagency.com</a></p>
+            <p>Website: <a href="https://aismartbotagency.com" target="_blank">aismartbotagency.com</a></p>
             <p>Email: <a href="mailto:sales@aismartbotagency.com">sales@aismartbotagency.com</a></p>
         </section>
     </main>
