@@ -3,7 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Bot Agency</title>
+    <title>Business Autopilot - Boost Sales with AI Agents</title>
+    <style>
+        /* General styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(30, 30, 30); /* Near-black background */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        /* Left Section */
+        .left-section {
+            max-width: 600px;
+        }
+
+        .left-section h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            font-weight: bold;
+        }
+
+        .left-section h1 .highlight {
+            color: #4a90e2;
+        }
+
+        .left-section p {
+            color: #d3d3d3;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+
+        .left-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .left-section ul li {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .left-section ul li::before {
+            content: "✔";
+            color: #b7b7b7;
+            margin-right: 10px;
+        }
+
+        /* Highlighted text without underline */
+        .highlighted-text {
+            color: #ffdd57; /* Bright color for emphasis */
+            font-weight: bold;
+        }
+
+        /* Right Section (Signup box) */
+        .right-section {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .right-section .promo {
+            background-color: rgb(234, 55, 247);
+            color: #ffffff;
+            padding: 10px 15px;
+            font-size: 0.9em;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .right-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .right-section .small-text {
+            font-size: 0.8em;
+            color: #666666;
+            margin-top: -5px;
+        }
+
+        .right-section select, .right-section input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .right-section button {
+            width: 100%;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .right-section button:hover {
+            background-color: #0056b3;
+        }
+
+        .microcopy {
+            font-size: 0.8em;
+            color: #666666;
+            margin-top: 5px;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            margin-top: 20px;
+            color: #cccccc;
+            font-size: 0.9em;
+        }
+
+        /* Testimonial Text */
+        .testimonial {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #d3d3d3;
+        }
+
+        /* Video Section */
+        .video-section {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 40px 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .video-section h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            margin-top: 40px;
+            color: #cccccc;
+            font-size: 1em;
+        }
+
+        .contact-section p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+
+        /* Top Links */
+        .top-links {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 0.9em;
+        }
+
+        .top-links a {
+            color: #cccccc;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        .top-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Right Section (Aligns top right) */
+        .login-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #cccccc;
+            text-decoration: none;
+        }
+
+    </style>
+
+
 
 
     <script type="module">
@@ -22,7 +233,7 @@
                     size: 48, // small | medium | large | number
                     dragAndDrop: true,
                     iconColor: "white",
-                    customIconSrc: "AI Smartbot Agency logo.png",
+                    customIconSrc: "https://aismartbotagency.com/AI Smartbot Agency logo.png",
                     autoWindowOpen: {
                         autoOpen: true, //parameter to control automatic window opening
                         openDelay: 7, // Optional parameter for delay time in seconds
@@ -31,17 +242,17 @@
                 },
                 tooltip: {
                     showTooltip: true,
-                    tooltipMessage: 'Hi 👋 Get more sales with AI chatbots',
+                    tooltipMessage: 'Hi 👋 Get more sales with AI Agents',
                     tooltipBackgroundColor: 'black',
                     tooltipTextColor: 'white',
                     tooltipFontSize: 16,
                 },
                 chatWindow: {
                     showTitle: true,
-                    title: 'AI Smartbot Agency',
+                    title: 'AI Sales Agent',
                     titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                     showAgentMessages: true,
-                    welcomeMessage: 'Hi, how can I help you? By the way, you can have a chatbot like me for your website! 😮',
+                    welcomeMessage: 'Hi 👋 How can I help you? By the way, you can have a sales agent like me for your website! 😮 Would you like to try your own AI agent?',
                     errorMessage: 'This is an error message',
                     backgroundColor: "#ffffff",
                     backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
@@ -55,7 +266,7 @@
                         backgroundColor: "#f7f8ff",
                         textColor: "#303235",
                         showAvatar: true,
-                        avatarSrc: "AI Smartbot Agency logo.png",
+                        avatarSrc: "https://aismartbotagency.com/AI Smartbot Agency logo.png",
                     },
                     userMessage: {
                         backgroundColor: "#3B81F6",
@@ -82,7 +293,7 @@
                     footer: {
                         textColor: '#303235',
                         text: '',
-                        company: 'AI Smartbot Agency',
+                        company: 'AI Sales Agent',
                         companyLink: 'https://aismartbotagency.com',
                     }
                 }
@@ -94,156 +305,68 @@
 
     <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="WdYZ1z9pDR1ZcOlN" data-version="062024"></script>
 
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: auto;
-            padding: 0 px;
-        }
-        h1, h2 {
-            color: #0066cc;
-        }
-        .warning {
-            background-color: #ffcc00;
-            padding: 10px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-weight: bold;
-        }
-        .cta-button {
-            background-color: #0066cc;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-            font-weight: bold;
-
-            border-radius: 10px; /* Adjust this value for more or less rounding */
-            background-color: #4CAF50; /* Optional: Button background color */
-            border: none; /* Remove border */
-            cursor: pointer; /* Change cursor on hover */
-          }
-
-          .cta-button:hover {
-            background-color: #45a049; /* Optional: Change color on hover */
-          }
-        .benefits {
-            margin-left: 20px;
-        }
-        .benefits li {
-            margin-bottom: 10px;
-        }
-        .steps {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-        .step {
-            flex-basis: 30%;
-            padding: 15px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-        }
-        .additional-benefits {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .benefit-item {
-            background-color: #e6f2ff;
-            padding: 15px;
-            border-radius: 5px;
-        }
-        .disclaimer {
-            font-size: 0.8em;
-            margin-top: 40px;
-            color: #666;
-        }
-
-
-
-        /* chatbot */
-        .chat-layout .chat-header {
-            height: 0px;
-        }
-    </style>
-
 </head>
 <body>
-    <div class="warning">
-        Warning: This AI is ONLY for companies that have sufficient capacity for +35% more inquiries!
-    </div>
-    
-    <img width="100%" src="AI Smartbot Agency.jpg">
-    <h1>Don't hire employees!</h1>
-    <h2>Your AI sales agent processes your website inquiries 24/7</h2>
-    
-    <a href="https://cal.com/schedulemeeting/smartbot-demo" class="cta-button">Click here for a free, personalized demo</a>
-    
-    <p>See for yourself:</p>
-    
-    <p>Your AI Sales Agent supports your company by processing inquiries around the clock, qualifying and guiding potential customers to purchase.</p>
 
+<div class="top-links">
+    <a href="#">Business Autopilot</a>
+</div>
+
+<a href="#" class="login-link">Login</a>
+
+<div class="container">
+    <!-- Left Section -->
+    <div class="left-section">
+        <p>For: Business Owners</p>
+        <h1>Boost Your Sales by <span class="highlight">200%</span><br>with <span class="highlight">AI AGENTS</span></h1>
+        <p>Join 5,000+ businesses replacing unreliable employees with <strong>AI Agents</strong> in <span class="highlighted-text">sales</span>, <span class="highlighted-text">customer service</span>, and <span class="highlighted-text">marketing roles</span>.</p>
+        <ul>
+            <li>Replace costly employees</li>
+            <li>Work for you 24/7</li>
+            <li>Scale your business</li>
+            <li>No programming required</li>
+            <li>No tech skills needed</li>
+        </ul>
+        <div class="social-proof">
+            <p>🌟 Trusted by industry leaders in tech and e-commerce</p>
+            <div class="testimonial">
+                "We increased our sales pipeline by 175% in just 2 months using AI Agents." — Sarah Chen, TechGrowth Inc
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <div class="promo">Launch Immediately</div>
+        <h2>Deploy Your Agent 🚀</h2>
+        <p class="small-text">Set up in less than 5 minutes</p>
+        <form action="https://app.ailedbusiness.com/webhook/d77a8b12-5f41-419e-ba8a-5294382326f7" method="POST">
+            <select name="agent_type" required>
+                <option value="Sales Agent">Sales Agent</option>
+                <option value="Customer Service Agent">Customer Service Agent</option>
+                <option value="Marketing Agent">Marketing Agent</option>
+            </select>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <button type="submit">Start Free Trial →</button>
+        </form>
+        <div class="microcopy">No credit card required • 14-day free trial</div>
+    </div>
+</div>
+
+<!-- Video Section -->
+<div class="video-section">
+    <h3>Watch Demo: Sales Agent</h3>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/CEZrD91JpJA?si=t1D_bP37i4dAWUF-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <h2>What does an AI sales agent bring?</h2>
-    <ul class="benefits">
-        <li>Your agent works around the clock, every day</li>
-        <li>It answers every inquiry immediately - and all simultaneously</li>
-        <li>No sick days or vacation days</li>
-        <li>A full-time employee for a fraction of the cost</li>
-    </ul>
-    
-    <h2>How does it work?</h2>
-    <div class="steps">
-        <div class="step">
-            <h3>1. Training</h3>
-            <p>After purchase, the AI agent is specifically trained for your company for 7 days. We ensure that the AI knows everything about your business. This way, the agent will advise your customers as a real employee would - even better.</p>
-        </div>
-        <div class="step">
-            <h3>2. Testing & Improving</h3>
-            <p>You receive your agent and can put it through its paces. Please share every little remark with us during this phase so that we can further improve the agent if necessary.</p>
-        </div>
-        <div class="step">
-            <h3>3. Dismiss employees</h3>
-            <p>You now have an AI agent that processes your inquiries every day, around the clock. You only need to contact customers after they have already been warmed up and prepared.</p>
-        </div>
-    </div>
-    
-    <h2>Additional Benefits</h2>
-    <div class="additional-benefits">
-        <div class="benefit-item">
-            <h3>Better Customer Experience</h3>
-            <p>An AI agent offers customers personalized recommendations and ensures smooth interaction, significantly improving the overall experience.</p>
-        </div>
-        <div class="benefit-item">
-            <h3>No Human Errors</h3>
-            <p>By using AI, human errors are minimized, leading to more accurate and efficient processing of customer inquiries.</p>
-        </div>
-        <div class="benefit-item">
-            <h3>All Languages</h3>
-            <p>Your AI agent can advise your clientele easily and very competently in all languages.</p>
-        </div>
-        <div class="benefit-item">
-            <h3>Easy Integration</h3>
-            <p>Your AI agent integrates seamlessly into your existing systems without the need for complex adjustments. This saves you time and resources.</p>
-        </div>
-        <div class="benefit-item">
-            <h3>Subsequent Training</h3>
-            <p>You can continuously improve your agent according to your wishes by further training it and adapting it to new datasets.</p>
-        </div>
-        <div class="benefit-item">
-            <h3>Real-time Data Analysis</h3>
-            <p>You receive all data on the performance and behavior of your agent. This allows you to make targeted improvements and better understand your customers' behavior.</p>
-        </div>
-    </div>
-    
-    <p class="disclaimer">This website is not part of Facebook or Facebook Inc. Furthermore, this website is not endorsed by Facebook in any way. Facebook is a trademark of Facebook, Inc.</p>
+</div>
+
+<!-- Contact Section on Black Background -->
+<div class="contact-section">
+    <p><strong>Contact Us</strong></p>
+    <p>Email</p>
+    <p>Whatsapp</p>
+    <p>Telegram</p>
+    <div class="footer">© 2024 All Rights Reserved.</div>
+</div>
+
 </body>
 </html>
